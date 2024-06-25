@@ -1,0 +1,116 @@
+.navbar-nav .nav-link {
+  font-size: 25px; /* 调整导航栏右侧字体大小 */
+}
+
+.navbar-nav .nav-item:not(:last-child) {
+  margin-right: 20px; /* 添加右侧间距，使分隔符与文字之间有一定间隔 */
+}
+
+.bg-custom {
+  background-color: #bc2b3d !important;
+}
+
+.nav-link {
+  color: #000000; /* 默认文字颜色为黑色 */
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff0000; /* 悬停或选中时文字颜色为红色 */
+}
+
+.scrollspy-example {
+  position: relative;
+  height: 350px;
+  overflow: auto;
+}
+
+.red-divider {
+  border-top: 2px solid #bc2b3d !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+} /*红色分割线*/
+
+.ctitle {
+  display: flex;
+  justify-content: center;
+}
+
+/*firstpage*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background: #f9f9f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.parallax {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#text {
+  position: absolute;
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.sec {
+  position: relative;
+  background: #bc2b3d;
+  padding: 100px;
+}
+
+.sec h2 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sec p {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+.li {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fixed Image with Buttons</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* 防止水平滚动条出现 */
+        background-color: rgb(236, 235, 235); /* 背景颜色 */
+    }
+    .container {
+        position: ab;
+        width: 100%; /* 保证容器宽度与视口宽度一致 */
+        max-width: 1200px; /* 可根据需要设置容器最大宽度 */
+        /*margin: 0 auto;  居中显示 */
+    }
+    .image-container {
+        position: absolute;
+        width: 100%;
+        max-width: 1000px; /* 图片容器最大宽度，可根据图片实际大小调整 */
+        /*margin: 0 auto;  居中显示 */
+        transition: filter 0.3s; /* 添加过渡效果 */
+    }
+    .image-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .button-container {
+        position: absolute;
+        top: 20px; /* 调整按钮容器相对于图片顶部的位置 */
+        left: 20px; /* 调整按钮容器相对于图片左侧的位置 */
+    }
+    /* 样式按钮样式可以根据需要自定义 */
+    .button {
+        position: absolute;
+        border: 2px dashed #03142586; /* 添加虚线边框 */
+        background-color: transparent; /* 透明背景 */
+        content: ''; /* 必须设置内容为空，否则伪元素不会显示 */
+    }
+    .button.box {
+        top: 452px; /* 调整按钮位置 */
+        left: 54px; /* 调整按钮位置 */
+        width: 109px; /* 调整按钮宽度 */
+        height: 74px; /* 调整按钮高度 */
+    }
+    .button.radio {
+        top: 330px;
+        left: 182px;
+        width: 70px;
+        height: 43px;
+    }
+    .button.medal {
+        border: 2px dashed #0314252f; /* 添加虚线边框 */
+        top: 355px;
+        left: 282px;
+        width: 82px;
+        height: 20px;
+    }
+    .button.pic1 {
+        top: 174px;
+        left: 511px;
+        width: 91px;
+        height: 105px;
+    }
+    .button.pic2 {
+        top: 132.5px;
+        left: 655.5px;
+        width: 81.5px;
+        height: 58.5px;
+    }
+    .button.pic3 {
+        top: 238px;
+        left: 666.5px;
+        width: 49.5px;
+        height: 58px;
+    }
+    .button.pic4 {
+        top: 151px;
+        left: 875.5px;
+        width: 46.1px;
+        height: 53px;
+    }
+    .hidden-image {
+        position: absolute;
+        width: 100%;
+        visibility: hidden;
+        position: absolute;
+    }
+    .hidden-image.medal {
+        top: 380px; /* 根据需要调整图片位置 */
+        left: 300px; /* 根据需要调整图片位置 */
+        max-width: 100px; /* 图片宽度 */
+    }
+    .hidden-image.pic1 {
+        /* visibility: visible; 调试用 */
+        top: 40px;
+        left: 430px;
+        max-width: 300px;
+    }
+    .hidden-image.pic2 {
+        top: 38px;
+        left: 490px;
+        max-width: 430px;
+    }
+    .hidden-image.pic3 {
+        top: 178px;
+        left: 568px;
+        max-width: 300px;
+    }
+    .hidden-image.pic4 {
+        top: 8px;
+        left: 798px;
+        max-width: 200px;
+    }
+    .blurred {
+        filter: blur(2px); /* 模糊效果 */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container" id="imageContainer">
+            <img src="img/coloredRooms.jpg" alt="Rooms Image">
+            <div class="button-container">
+                <a href="#" class="button box" id="boxButton"></a>
+                <a href="#" class="button radio" id="radioButton"></a>
+                <a href="#" class="button medal" id="medalButton"></a>
+                <a href="#" class="button pic1" id="image1Button"></a>
+                <a href="#" class="button pic2" id="image2Button"></a>
+                <a href="#" class="button pic3" id="image3Button"></a>
+                <a href="#" class="button pic4" id="image4Button"></a>
+
+            </div>
+        </div>
+        <img src="img/medal.png" alt="Medal Image" class="hidden-image medal" id="medalImage">
+        <img src="img/pic1.png" alt="Image1" class="hidden-image pic1" id="image1">
+        <img src="img/pic2.png" alt="Image2" class="hidden-image pic2" id="image2">
+        <img src="img/pic3.png" alt="Image3" class="hidden-image pic3" id="image3">
+        <img src="img/pic4.png" alt="Image4" class="hidden-image pic4" id="image4">
+
+
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
